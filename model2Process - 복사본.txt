@@ -1,0 +1,22 @@
+﻿
+1) web.xml
+
+
+2) /board/index
+
+
+3) BoardController
+
+
+	commandHandlerURI.properties
+		/board/index=handler.board.indexAction = handler.board.IndexAction 으로 감
+
+
+		/changePwd.do=member.command.ChangePasswordHandler
+
+4) IndexAction :
+      
+5) browser;  
+
+
+
