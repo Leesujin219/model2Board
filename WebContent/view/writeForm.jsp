@@ -12,7 +12,7 @@
 <div class="w3-container">
 <center><b>글쓰기</b>
 <br>
-	<form method="post" name="writeform" action="writePro.jsp" >
+	<form method="post" name="writeform" action="writePro" >
 	<!-- writePro에 hidden으로 넘겨줄 값들 -->
 	<input type="hidden" name="boardid" value="${boardid }">	
 	<input type="hidden" name="num" value="${num}">	
@@ -37,18 +37,14 @@
 	    <td width="330">
 	 
 	 	
-	 	<% if(request.getParameter("num")==null) {
-	 		//num==null인 경우는 새 글이라는 뜻
-	 	%>
+	 	<c:if test="${num==0 }">
 	 		<input type="text" size="40" maxlength="50" name="subject">
-
-	 	<%}else{	//답글일 경우에는 제목 앞에 [답글]이라는 단어를 넣어주는 것
-	 		%>
+	 	</c:if>
+	 	<c:if test="${num!=0 }">
 	 		<input type="text" size="40" maxlength="50" name="subject" value="[답글]">
-	 		
-	 		<%
-	 	}
-	 	%>
+	 	</c:if>
+	 	
+	 	
 	   
 	   </td>
 	  </tr>

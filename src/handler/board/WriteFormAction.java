@@ -13,7 +13,7 @@ public class WriteFormAction implements CommandHandler{
 		int num=0,ref=0,re_step=0,re_level=0;
 		//boardid 어떤 게시판인지 구분되어 form에서 값이 넘어가야함
 		String boardid=req.getParameter("boardid");
-		if(boardid==null) 
+		if(boardid==null||boardid.equals("")) 
 			boardid="1";
 		if(req.getParameter("num")!=null){
 			//답글을 작성할 때
