@@ -19,7 +19,7 @@
 	<input type="hidden" name="ref" value="${ref}">	
 	<input type="hidden" name="re_level" value="${re_level}">	
 	<input type="hidden" name="re_step" value="${re_step }">	
-	
+
 	<table class="w3-table-all"  style="width:70%;" >
 	   <tr>
 	    <td align="right" colspan="2" >
